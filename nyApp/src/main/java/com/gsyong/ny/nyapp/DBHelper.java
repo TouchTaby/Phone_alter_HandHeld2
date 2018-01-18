@@ -11,7 +11,7 @@ import android.util.Log;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME="ny.db";//数据库名称
+    private static final String DATABASE_NAME="ny.db";//数据库名称 git 成功~
     private static final int SCHEMA_VERSION=1;//版本号,则是升级之后的,升级方法请看onUpgrade方法里面的判断
 
     public DBHelper(Context context) {//构造函数,接收上下文作为参数,直接调用的父类的构造函数
