@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gsyong.ny.nyapp.my_toptitle
+        android:id="@+id/toptitle_query"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent"/>
+    <!--   android:layout_alignParentBottom="true"-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/startTime"
+                style="@style/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="选择开始时间"
+                android:inputType="none" />
+
+            <EditText
+                android:id="@+id/endTime"
+                style="@style/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="点击结束时间"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/zhuangtai"
+            style="@style/edittext1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="选择入库状态"
+            android:inputType="none" />
+
+        <Button
+            android:id="@+id/bt_query"
+            style="@style/anniu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="查询" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/table_title"
+                layout="@layout/item_rukuchaxun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dip" />
+
+            <com.chanven.lib.cptr.PtrClassicFrameLayout
+                xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/test_recycler_view_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0"
+                cube_ptr:ptr_duration_to_close="200"
+                cube_ptr:ptr_duration_to_close_header="700"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5"
+                cube_ptr:ptr_resistance="1.8">
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/recyclerView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </com.chanven.lib.cptr.PtrClassicFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

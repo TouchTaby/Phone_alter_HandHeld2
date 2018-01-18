@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gsyong.ny.nyapp.my_toptitle
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent">
+    </com.gsyong.ny.nyapp.my_toptitle>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+    <TableRow
+        style="@style/tablerow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            style="@style/th_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="产品代码："
+            android:layout_gravity="end" />
+
+        <EditText
+            android:id="@+id/view_cp_daima"
+            style="@style/edittext1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="neirong"/>
+
+
+    </TableRow>
+
+
+        <TableRow
+            style="@style/tablerow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/th_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="农药名称："
+                android:layout_gravity="end" />
+
+            <EditText
+                android:id="@+id/view_cp_mingzi"
+                style="@style/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            style="@style/tablerow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/th_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登记证号："
+                android:layout_gravity="end" />
+
+            <EditText
+                android:id="@+id/view_cp_dengjizheng"
+                style="@style/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            style="@style/tablerow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/th_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登记证持有人："
+                android:layout_gravity="end" />
+
+            <EditText
+                android:id="@+id/view_cp_chiyouren"
+                style="@style/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tablerow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/th_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="剂型："
+                android:layout_gravity="end" />
+
+            <EditText
+                android:id="@+id/view_cp_jixing"
+                style="@style/edittext1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tablerow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/th_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="含量："
+                android:maxLength="6"
+                android:layout_gravity="end" />
+
+            <EditText
+                style="@style/edittext1"
+                android:id="@+id/view_cp_hanliang"
+                android:numeric="integer"
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            style="@style/tablerow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/th_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="件数："
+                android:maxLength="6"
+                android:layout_gravity="end" />
+
+            <EditText
+                android:id="@+id/view_cp_jianshu"
+                style="@style/edittext1"
+                android:layout_width="200dp"
+                android:inputType="number"
+                android:numeric="integer"
+                android:layout_height="match_parent" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+    <TextView
+        style="@style/th_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注：含量即为每件包含的最小单位数量。"
+        />
+
+    <Button
+        android:id="@+id/btnchaxun"
+        style="@style/anniu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="确定" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_above="@+id/linearLayout">
+
+    <com.gsyong.ny.nyapp.my_toptitle
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent">
+
+
+
+    </com.gsyong.ny.nyapp.my_toptitle>
+
+
+    <include
+        layout="@layout/item_rukuliebiao"
+        android:id="@+id/table_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        />
+    <ListView
+        android:id="@+id/list"
+        android:divider="#B4B3B3"
+        android:dividerHeight="0.5dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

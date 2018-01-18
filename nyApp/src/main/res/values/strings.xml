@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">nyApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="Webservice_Url_mobileinterface">http://aqjc.china1908.com/ajax/mobileinterface.ashx</string>
+    <string name="Webservice_Url_nongyao">http://ny.gsyong.com/ajax/mobileAPP.ashx</string>
+    <string name="app_login_title">农药管理系统</string>
+</resources>

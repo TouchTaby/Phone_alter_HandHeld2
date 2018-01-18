@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="tablerow">
+        <item name="android:background">@color/colorViewBackground</item>
+        <item name="android:layout_marginBottom">0.5dp</item>
+    </style>
+
+    <style name="th_data">
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/colorheitan</item>
+
+    </style>
+
+    <style name="td_data">
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">11dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="mian_textview">
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <!-- my loading dialog -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- popup window 显示消失动画-->
+    <style name="PopWindowAnimStyle">
+        <item name="android:windowShowAnimation">@anim/dialog_enter</item>
+        <!-- 指定显示的动画xml  -->
+        <item name="android:windowHideAnimation">@anim/dialog_exit</item>
+        <!-- 指定消失的动画xml  -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="anniu1">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">#eaf4fc</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="edittext1">
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="login_edittext">
+        <item name="android:background">@drawable/login_edittext</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#eaf4fc</item>
+        <item name="android:textColorHint">#bfbfbf</item>
+    </style>
+
+</resources>

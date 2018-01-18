@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorViewBackground"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:weightSum="1">
+
+    <com.gsyong.ny.nyapp.my_toptitle
+        android:id="@+id/toptitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent"></com.gsyong.ny.nyapp.my_toptitle>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="按地域范围"
+            android:textSize="18sp" />
+
+        <com.gsyong.ny.nyapp.my_diqu
+            android:id="@+id/diqu"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp">
+
+        </com.gsyong.ny.nyapp.my_diqu>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext"
+            android:hint="按企业名称"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            style="@style/anniu1"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="搜索"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

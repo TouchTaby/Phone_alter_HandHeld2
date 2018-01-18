@@ -1,0 +1,43 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:1-14:12
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:1-14:12
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:1-14:12
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:1-14:12
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:1-14:12
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:1-14:12
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:1-14:12
+	package
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:2:5-35
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:4:5-30
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:3:5-28
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+uses-sdk
+ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:6:5-7:36
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:6:5-7:36
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:6:5-7:36
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:6:5-7:36
+INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:6:5-7:36
+	android:targetSdkVersion
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:6:5-7:36
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:7:9-34
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+		INJECTED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml
+application
+ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:9:5-12:19
+	android:label
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:11:9-41
+	android:allowBackup
+		ADDED from E:\MyWorkerCode\Phone_alter_HandHeld\cptr\AndroidManifest.xml:10:9-35

@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "662,723,776,832,887,937,1000,1060,1115,1176",
+                        "endColumns": "60,52,55,54,49,62,59,54,60,53",
+                        "endOffsets": "718,771,827,882,932,995,1055,1110,1171,1225"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1075,1136,1189,1245,1300,1350,1413,1473,1528,1589",
+                        "endColumns": "60,52,55,54,49,62,59,54,60,53",
+                        "endOffsets": "1131,1184,1240,1295,1345,1408,1468,1523,1584,1638"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\recyclerview-v7-23.1.0.aar\\cce700c59ba4ea5c7503dd42ba4bc1c5\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "5,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "558,861",
+                        "endColumns": "74,65",
+                        "endOffsets": "628,922"
+                    },
+                    "to": {
+                        "startLines": "5,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "934,1009",
+                        "endColumns": "74,65",
+                        "endOffsets": "1004,1070"
+                    }
+                }
+            ]
+        }
+    ]
+}

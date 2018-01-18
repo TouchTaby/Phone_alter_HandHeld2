@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/text_xuhao"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:text="序号" />
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3"/>
+
+    <TextView
+        android:id="@+id/text_mingzi"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="商品名称" />
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3"/>
+
+    <TextView
+        android:id="@+id/text_hanliang"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="含量" />
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3"/>
+
+
+
+    <EditText
+        style="@style/edittext1"
+        android:id="@+id/text_jianshu"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:numeric="integer"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="件数" />
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="#B4B3B3"/>
+
+
+    <TextView
+        android:id="@+id/text_code"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="代码"
+        android:visibility="gone"/>
+</LinearLayout>
