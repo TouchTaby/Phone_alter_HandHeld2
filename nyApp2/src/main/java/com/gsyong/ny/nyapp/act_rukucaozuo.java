@@ -73,9 +73,9 @@ public class act_rukucaozuo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_rukucaozuo);
+
         new InitTask().execute();//异步初始化
         iniActivity();
-        permission();
     }
 
     private void permission() {
@@ -84,9 +84,13 @@ public class act_rukucaozuo extends AppCompatActivity {
                 //先判断有没有权限 ，没有就在这里进行权限的申请
                 ActivityCompat.requestPermissions(act_rukucaozuo.this,
                         new String[]{android.Manifest.permission.CAMERA},1);
-
+                Log.e(TAG, "permission: 添加权限" );
             }else {
+                //先判断有没有权限 ，没有就在这里进行权限的申请
+                ActivityCompat.requestPermissions(act_rukucaozuo.this,
+                        new String[]{android.Manifest.permission.CAMERA},1);
                 //说明已经获取到摄像头权限了 想干嘛干嘛
+                Log.e(TAG, "permission: 已经添加权限" );
             }
             //读写内存权限
             if (ContextCompat.checkSelfPermission(this,
@@ -113,7 +117,7 @@ public class act_rukucaozuo extends AppCompatActivity {
 
         }else {
 //这个说明系统版本在6.0之下，不需要动态获取权限。
-
+            Log.e(TAG, "permission:这个说明系统版本在6.0之下，不需要动态获取权限。 " );
         }
     }
 
@@ -247,6 +251,7 @@ public class act_rukucaozuo extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                barcode2DWithSoft.close();//读头和摄像头不能同时打开
                 IntentIntegrator integrator = new IntentIntegrator(act_rukucaozuo.this);
                 // 设置要扫描的条码类型，ONE_D_CODE_TYPES：一维码，QR_CODE_TYPES-二维码
                 integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);

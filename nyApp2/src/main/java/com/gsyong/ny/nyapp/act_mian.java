@@ -1,10 +1,14 @@
 package com.gsyong.ny.nyapp;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -16,8 +20,6 @@ import com.google.gson.Gson;
 import com.gsyong.ny.nyapp.Model.dt_ruku_cp;
 import com.gsyong.ny.nyapp.activity.OutQueryActivity;
 import com.gsyong.ny.nyapp.activity.OutStorageActivity;
-import com.gsyong.ny.nyapp.utlis.WebService;
-import com.thoughtworks.xstream.XStream;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,6 +45,49 @@ public class act_mian extends AppCompatActivity {
             StrictMode.setThreadPolicy(policy);
         }
         iniActivity();
+//        permission();
+    }
+    private void permission() {
+        if (Build.VERSION.SDK_INT>21){
+            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
+                //先判断有没有权限 ，没有就在这里进行权限的申请
+                ActivityCompat.requestPermissions(act_mian.this,
+                        new String[]{android.Manifest.permission.CAMERA},1);
+                Log.e(TAG, "permission: 添加权限" );
+            }else {
+                //先判断有没有权限 ，没有就在这里进行权限的申请
+                ActivityCompat.requestPermissions(act_mian.this,
+                        new String[]{android.Manifest.permission.CAMERA},1);
+                //说明已经获取到摄像头权限了 想干嘛干嘛
+                Log.e(TAG, "permission: 已经添加权限" );
+            }
+            //读写内存权限
+            if (ContextCompat.checkSelfPermission(this,
+                    Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // 请求权限
+                ActivityCompat
+                        .requestPermissions(
+                                this,
+                                new String[] { Manifest.permission.ACCESS_COARSE_LOCATION },
+                                1);
+            }
+
+            int checkCallPhonePermission = ContextCompat.checkSelfPermission(
+                    this, Manifest.permission.READ_EXTERNAL_STORAGE);
+            if (checkCallPhonePermission != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[] {
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.READ_EXTERNAL_STORAGE, }, 1);
+                return;
+            } else {
+                // 上面已经写好的拨号方法
+
+            }
+
+        }else {
+//这个说明系统版本在6.0之下，不需要动态获取权限。
+            Log.e(TAG, "permission:这个说明系统版本在6.0之下，不需要动态获取权限。 " );
+        }
     }
 
     void iniActivity() {
@@ -135,35 +180,35 @@ public class act_mian extends AppCompatActivity {
                         dt_ruku_cp._ylint2 = cursor.getInt(4);
                         dt_ruku_cp._ylint3 = cursor.getInt(5);
                         dt_ruku_cp._ylstr1 = cursor.getString(6);
-//                        var.put("action", "upload_rukucp");
-//                        var.put("daima", cursor.getString(2));
-//                        var.put("listUid", cursor.getString(1));
-//                        var.put("uid", cursor.getString(0));
-//                        var.put("ylint1", cursor.getString(3));
-//                        var.put("ylint2", cursor.getString(4));
-//                        var.put("ylint3", cursor.getString(5));
-//                        var.put("ylstr1", cursor.getString(6));
-//                      String str = PostRequest.sendPostRequest(Url, var, null);
+                        var.put("action", "upload_rukucp");
+                        var.put("daima", cursor.getString(2));
+                        var.put("listUid", cursor.getString(1));
+                        var.put("uid", cursor.getString(0));
+                        var.put("ylint1", cursor.getString(3));
+                        var.put("ylint2", cursor.getString(4));
+                        var.put("ylint3", cursor.getString(5));
+                        var.put("ylstr1", cursor.getString(6));
+                      String str = PostRequest.sendPostRequest(Url, var, null);
 //                        String re = gson.toJson(dt_ruku_cp);
 //
 //                        Log.e(TAG, "run: " + re);
-                        XStream xStream = new XStream();
-                        String s = xStream.toXML(dt_ruku_cp);
-                        Log.e(TAG, "run: ggggggggggg" + s );
-                        boolean str = WebService.syn_rukucp(s);
-                        Log.e(TAG, "run: 上傳返回--" + str);
-//                      try {
+//                        XStream xStream = new XStream();
+//                        String s = xStream.toXML(dt_ruku_cp);
+//                        Log.e(TAG, "run: ggggggggggg" + s );
+//                        boolean str = WebService.syn_rukucp(s);
+//                        Log.e(TAG, "run: 上傳返回--" + str);
+                      try {
                         Log.d("上传入库商品", cursor.getString(0) + " " + str);
-//                          JSONObject jsonObj = new JSONObject(str);
-//                          if(jsonObj.getString("status").equals("y")){
-//                                sqlstr = "update dt_ruku_cp set isserver = 1 where uid = '"+cursor.getString(0)+"'";
-//                                db.getWritableDatabase().execSQL(sqlstr);
-//                          }
+                          JSONObject jsonObj = new JSONObject(str);
+                          if(jsonObj.getString("status").equals("y")){
+                                sqlstr = "update dt_ruku_cp set isserver = 1 where uid = '"+cursor.getString(0)+"'";
+                                db.getWritableDatabase().execSQL(sqlstr);
+                          }
 
-//                      }
-//                      catch (JSONException e) {
-//                          Log.d("上传入库商品错误:",e.getMessage());
-//                      }
+                      }
+                      catch (JSONException e) {
+                          Log.d("上传入库商品错误:",e.getMessage());
+                      }
                         Thread.sleep(500);
                     }
                     //上传入库列表

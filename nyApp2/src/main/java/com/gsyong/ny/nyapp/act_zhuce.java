@@ -17,7 +17,6 @@ import android.widget.Toast;
 
 import com.gsyong.ny.nyapp.Model.dt_qiye;
 import com.gsyong.ny.nyapp.Model.dt_zhucema;
-import com.gsyong.ny.nyapp.utlis.WebService;
 import com.zebra.adc.decoder.Barcode2DWithSoft;
 
 import org.json.JSONException;
@@ -84,13 +83,15 @@ public class act_zhuce extends AppCompatActivity {
                 String code = codeEdit.getText().toString().trim();
                 //设置参数
                 HashMap<String, String> var = new HashMap<String, String>();
-                var.put("action", "zhucemabangding");
-                var.put("pcmac", WebService.getMAC(getApplication()));
-                var.put("zhucema", code);
+//                var.put("action", "zhucemabangding");
+//                var.put("pcmac", WebService.getMAC(getApplication()));
+//                var.put("zhucema", code);
+                var.put("action", "zhuce");
+                var.put("code", code);
                 //发送请求
-//                String str = PostRequest.sendPostRequest(Url, var, null);
+                String str = PostRequest.sendPostRequest(Url, var, null);
 
-                String str = WebService.zhucebangding(code, WebService.getMAC(getApplicationContext()));
+//                String str = WebService.zhucebangding(code, WebService.getMAC(getApplicationContext()));
 
                 Message msg = new Message();
                 msg.what = 1;
