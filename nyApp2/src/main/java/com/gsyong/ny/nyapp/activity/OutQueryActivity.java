@@ -17,7 +17,7 @@ public class OutQueryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_out_query);
         initView();
-        //查询出库界面
+        //查询出库界面的
     }
     private void initView() {
         //透明状态栏

@@ -53,6 +53,7 @@ public class OutStorageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_out_storage);
         initView();
         new InitTask().execute();//异步初始化
+
     }
 
     private void initView() {
