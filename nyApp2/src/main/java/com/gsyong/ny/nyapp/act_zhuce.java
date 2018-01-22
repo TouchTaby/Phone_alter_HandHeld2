@@ -88,7 +88,7 @@ public class act_zhuce extends AppCompatActivity {
 //                var.put("zhucema", code);
                 var.put("action", "zhuce");
                 var.put("code", code);
-                //发送请求
+                //发送请求d
                 String str = PostRequest.sendPostRequest(Url, var, null);
 
 //                String str = WebService.zhucebangding(code, WebService.getMAC(getApplicationContext()));

@@ -23,6 +23,7 @@ public class PostRequest {
     public static String sendPostRequest(String url,Map<String,String> params,Map<String,String> headers) {
         StringBuilder buf = new StringBuilder();
         Set<Map.Entry<String, String>> entrys = null;
+
         if (params != null && !params.isEmpty()) {
             entrys = params.entrySet();
             for (Map.Entry<String, String> entry : entrys) {

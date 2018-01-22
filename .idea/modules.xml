@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Phone_alter_HandHeld.iml" filepath="$PROJECT_DIR$/Phone_alter_HandHeld.iml" />
+      <module fileurl="file://E:\adobe\Phone_alter_HandHeld2\Phone_alter_HandHeld.iml" filepath="E:\adobe\Phone_alter_HandHeld2\Phone_alter_HandHeld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Phone_alter_HandHeld2.iml" filepath="$PROJECT_DIR$/Phone_alter_HandHeld2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cptr/cptr.iml" filepath="$PROJECT_DIR$/cptr/cptr.iml" />
       <module fileurl="file://$PROJECT_DIR$/nyApp/nyApp.iml" filepath="$PROJECT_DIR$/nyApp/nyApp.iml" />

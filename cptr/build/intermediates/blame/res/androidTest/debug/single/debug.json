@@ -1,14 +1,14 @@
 [
     {
-        "merged": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_loadmore_default_footer.xml.flat",
-        "source": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\bundles\\debug\\res\\layout\\loadmore_default_footer.xml"
+        "merged": "E:\\adobe\\Phone_alter_HandHeld2\\cptr\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ptr_rotate_arrow.png.flat",
+        "source": "E:\\adobe\\Phone_alter_HandHeld2\\cptr\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
     },
     {
-        "merged": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_ptr_classic_default_header.xml.flat",
-        "source": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_classic_default_header.xml"
+        "merged": "E:\\adobe\\Phone_alter_HandHeld2\\cptr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_ptr_classic_default_header.xml.flat",
+        "source": "E:\\adobe\\Phone_alter_HandHeld2\\cptr\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_classic_default_header.xml"
     },
     {
-        "merged": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ptr_rotate_arrow.png.flat",
-        "source": "E:\\MyWorkerCode\\Phone_alter_HandHeld\\cptr\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
+        "merged": "E:\\adobe\\Phone_alter_HandHeld2\\cptr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_loadmore_default_footer.xml.flat",
+        "source": "E:\\adobe\\Phone_alter_HandHeld2\\cptr\\build\\intermediates\\bundles\\debug\\res\\layout\\loadmore_default_footer.xml"
     }
 ]
